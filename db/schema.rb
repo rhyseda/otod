@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20150713001534) do
     t.string   "content"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.time     "completed_at"
+    t.datetime "completed_at"
   end
 
   add_index "todo_items", ["todo_list_id"], name: "index_todo_items_on_todo_list_id"
